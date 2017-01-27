@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:_1A2BGame"
+             x:Class="_1A2BGame.MainPage"
+             Title="1A2BGAME">
+  <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="Black">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="2*" />
+      <RowDefinition Height="2*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Label  x:Name="txt_1A2BNumber"  FontAttributes="Bold" FontSize="40" BackgroundColor="Black" Text=""
+             TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+             LineBreakMode="NoWrap" Grid.Column="1" Grid.Row="1" />
+    
+    <Label x:Name="txt_Answer" FontAttributes="Bold" FontSize="32" BackgroundColor="Black" Text="0A0B"
+         TextColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+         LineBreakMode="NoWrap" Grid.Column="1" Grid.Row="2" />
+    <Button x:Name="btn_checklist" Text="查看紀錄" 
+               Style="{StaticResource buttonStyle}" Clicked="OnBtnCheckList" />
+    
+    <Button x:Name="btn_clear" Text="清除" Grid.Row="2" Grid.Column="2"
+               Style="{StaticResource buttonStyle}" Clicked="OnBtnClear" />
+    
+    <Button x:Name="btn_again" Text="重新一次" Grid.Row="0" Grid.Column="2"
+               Style="{StaticResource buttonStyle}" Clicked="OnAgain" />
+    
+    <Button Text="7" Grid.Row="5" Grid.Column="0"
+                Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber" />
+    <Button Text="8" Grid.Row="5" Grid.Column="1"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+    <Button Text="9" Grid.Row="5" Grid.Column="2"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+
+    <Button Text="4" Grid.Row="4" Grid.Column="0"
+            Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber" />
+    <Button Text="5" Grid.Row="4" Grid.Column="1"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+    <Button Text="6" Grid.Row="4" Grid.Column="2"
+            Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber" />
+
+    <Button Text="1" Grid.Row="3" Grid.Column="0"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+    <Button Text="2" Grid.Row="3" Grid.Column="1"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+    <Button Text="3" Grid.Row="3" Grid.Column="2"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+    <Button Text="0" Grid.Row="6" Grid.Column="2"
+             Style="{StaticResource buttonStyle}" Clicked="OnSelectNumber"/>
+    
+    <Button Text="送出答案" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+         Style="{StaticResource buttonStyle}" Clicked="OnBtnSend" />
+
+  </Grid>
+</ContentPage>
