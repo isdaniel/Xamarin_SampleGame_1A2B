@@ -12,6 +12,9 @@ namespace GameBLL
         private int _A;
         private int _B;
         public bool IsCorrect;
+        public void ClearRecord() {
+            Recordlist.Clear();
+        }
         /// <summary>
         /// 是否正確如果是正確清除紀錄
         /// </summary>

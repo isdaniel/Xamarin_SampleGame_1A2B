@@ -5,8 +5,14 @@
   <Application.Resources>
     <!-- Application resource dictionary -->
     <ResourceDictionary>
-      <Style x:Key="buttonStyle" TargetType="Button">
+      <Style x:Key="baseButtonStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="BorderRadius" Value="0" />
+        <Setter Property="FontSize" Value="36" />
+      </Style>
+      <Style x:Key="buttonStyle" BasedOn="baseButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Yellow" />
         <Setter Property="TextColor" Value="Black" />
         <Setter Property="BorderRadius" Value="0" />
         <Setter Property="FontSize" Value="36" />

@@ -33,6 +33,7 @@ namespace _1A2BGame
             {
                 txt_1A2BNumber.Text = "";
                 gameLogic.ResetAnswer();
+            
             }
         }
         private async void OnAgain(object sender, EventArgs e)
@@ -42,6 +43,7 @@ namespace _1A2BGame
             {
                 txt_1A2BNumber.Text = "";
                 gameLogic.ResetAnswer();
+                gameLogic.ClearRecord();
             }
         }
         void OnBtnSend(object sender, EventArgs e)

@@ -9,10 +9,10 @@ namespace _1A2BGame
 {
     public partial class App : Application
     {
-        public App()
+        public App(string filepath)
         {
             InitializeComponent();
-
+            
             MainPage = new NavigationPage(new MainPage());
         }
 

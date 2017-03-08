@@ -20,8 +20,8 @@ namespace _1A2BGame.Windows
         public MainPage()
         {
             this.InitializeComponent();
-
-            LoadApplication(new _1A2BGame.App());
+            string path=FileAccessHelper.GetLocalFilePath("Score.db");
+            LoadApplication(new _1A2BGame.App(path));
         }
     }
 }

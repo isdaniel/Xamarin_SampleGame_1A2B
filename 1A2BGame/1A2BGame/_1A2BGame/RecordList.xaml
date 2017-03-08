@@ -5,10 +5,10 @@
   x:Class="_1A2BGame.RecordList"
   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
   prism:ViewModelLocator.AutowireViewModel="True"
-  Title="紀錄">
+  Title="紀錄" >
   <StackLayout>
     <ListView x:Name="RList" 
-              Margin="20,0">
+              Margin="20,0" BackgroundColor="Black">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
@@ -29,5 +29,4 @@
       </ListView.ItemTemplate>
     </ListView>
   </StackLayout>
-
 </ContentPage>
